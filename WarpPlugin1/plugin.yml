@@ -1,0 +1,28 @@
+name: WarpPlugin
+main: WarpPlugin\Main
+version: 1.0.0
+api: 5.0.0
+author: YourName
+description: A simple warp plugin for PocketMine-MP
+
+commands:
+  setwarp:
+    description: Set a warp location (OP only)
+    usage: /setwarp <name>
+    permission: warpplugin.setwarp
+  warp:
+    description: Teleport to a warp
+    usage: /warp <name>
+    permission: warpplugin.warp
+  delwarp:
+    description: Delete a warp (OP only)
+    usage: /delwarp <name>
+    permission: warpplugin.delwarp
+
+permissions:
+  warpplugin.setwarp:
+    default: op
+  warpplugin.warp:
+    default: true
+  warpplugin.delwarp:
+    default: op
